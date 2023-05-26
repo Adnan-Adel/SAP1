@@ -8,7 +8,7 @@ use ieee.std_logic_unsigned.all;
 entity MEM is
 	port(RO: in std_logic;
 	     addr_in: in std_logic_vector(3 downto 0);
-	     data_in: in std_logic_vector(7 downto 0);
+	     --data_in: in std_logic_vector(7 downto 0);
 	     data_out: out std_logic_vector(7 downto 0));
 end MEM;
 

@@ -5,13 +5,13 @@ use ieee.std_logic_unsigned.all;
 
 -- OI: out-reg input (Stores the current values of the bus into output register)
 
-entity outreg is
+entity out_reg is
 port(clk,OI: in std_logic;
      data_in: in std_logic_vector(7 downto 0);
      data_out: out std_logic_vector(7 downto 0));
-end outreg;
+end out_reg;
 
-architecture logic of outreg is
+architecture logic of out_reg is
 signal out_content: std_logic_vector(7 downto 0) := (others => '0');
 begin
 process(clk)
