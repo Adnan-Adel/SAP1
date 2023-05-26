@@ -18,7 +18,7 @@ begin
 process(clk, reset)
 begin
 
-	if reset = '1' then
+	if reset = '0' then
 		PC_content <= (others => '0');
 	elsif rising_edge(clk) then
 		if CE = '1' then

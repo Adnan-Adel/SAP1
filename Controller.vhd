@@ -128,6 +128,20 @@ begin
 			next_state <= T0;
 	end case;
 end process;
+
+	OI <= ctrl_signal(0);
+	BI <= ctrl_signal(1);
+	EO <= ctrl_signal(2);
+	SU <= ctrl_signal(3);
+	AO <= ctrl_signal(4);
+	AI <= ctrl_signal(5);
+	IO <= ctrl_signal(6);
+	II <= ctrl_signal(7);
+	RO <= ctrl_signal(8);
+	MI <= ctrl_signal(9);
+	CO <= ctrl_signal(10);
+	CE <= ctrl_signal(11);
+	HLT <= HLT_signal;
 end logic;
 
 
